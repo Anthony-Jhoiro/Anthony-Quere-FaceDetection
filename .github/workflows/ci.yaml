@@ -1,12 +1,12 @@
-name: publish to nuget
+name: Test & Build
 on:
   push:
     branches:
-      - main # Default release branch, may also be named 'master' or 'develop'
+      - main
 jobs:
   publish:
-    name: build, pack & publish
-    runs-on: windows-latest
+    name: test & build
+    runs-on: windows-latest # not a fan but I know the library works on windows 
     steps:
       - uses: actions/checkout@v3
 
