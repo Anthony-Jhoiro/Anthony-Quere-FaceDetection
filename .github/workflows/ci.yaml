@@ -3,7 +3,6 @@ on:
   push:
     branches:
       - main # Default release branch, may also be named 'master' or 'develop'
-      - fix/tests
 jobs:
   publish:
     name: build, pack & publish
