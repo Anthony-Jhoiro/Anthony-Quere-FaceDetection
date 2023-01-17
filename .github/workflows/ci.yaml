@@ -1,0 +1,28 @@
+name: publish to nuget
+on:
+  push:
+    branches:
+      - main # Default release branch, may also be named 'master' or 'develop'
+jobs:
+  publish:
+    name: build, pack & publish
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup dotnet
+        uses: actions/setup-dotnet@v2
+        with:
+          dotnet-version: 6.0.404
+
+      - name: Run tests
+        run: dotnet test
+
+      - name: Build executable
+        run: dotnet publish ./src/Anthony.Quere.FaceDetection.Console/Anthony.Quere.FaceDetection.Console.csproj --self-contained true --output ./win-x64/facedetection.exe -c Release -r win-x64 /p:PublishSingleFile=true /p:PublishTrimmed=true /p:PublishReadyToRun=true
+
+      - name: Upload ${{ matrix.runtime }} Build Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: Publish ${{ matrix.runtime }} FaceDetection Console
+          path: ./win-x64/facedetection
