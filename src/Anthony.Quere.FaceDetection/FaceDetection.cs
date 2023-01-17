@@ -7,14 +7,14 @@ public class FaceDetection
 { 
     public FaceDetectionResult FaceDetectionInScene(byte[] imageScr)
     {
-        var points = new List<FaceDetectionPoint>();
-        points.Add(new FaceDetectionPoint { X = 1, Y = 2 });
-        return new FaceDetectionResult
-        {
-            ImageData = imageScr,
-            Points = points,
-        };
-        // TODO : re-add this
+        // var points = new List<FaceDetectionPoint>();
+        // points.Add(new FaceDetectionPoint { X = 1, Y = 2 });
+        // return new FaceDetectionResult
+        // {
+        //     ImageData = imageScr,
+        //     Points = points,
+        // };
+        // // TODO : re-add this
         var pathClassifier = Path.Combine(GetExecutingPath(),
             "haarcascade_frontalface_default.xml");
         using var cascade = new CascadeClassifier(pathClassifier);
