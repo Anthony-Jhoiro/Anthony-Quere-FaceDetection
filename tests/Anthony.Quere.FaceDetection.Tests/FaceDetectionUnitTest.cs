@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -24,7 +25,9 @@ public class FaceDetectionUnitTest
         var detectObjectInScenesResults = new
             FaceDetection().DetectInScenes(imageScenesData);
 
-        Assert.Equal("[{\"X\":744,\"Y\":165},{\"X\":165,\"Y\":410},{\"X\":139,\"Y\":195}]",JsonSerializer.Serialize(detectObjectInScenesResults[0].Points));
+        var points = detectObjectInScenesResults[0].Points.OrderBy(p => p.X);
+
+        Assert.Equal("[{\"X\":139,\"Y\":195},{\"X\":165,\"Y\":410},{\"X\":744,\"Y\":165}]",JsonSerializer.Serialize(points));
         Assert.Equal("[{\"X\":499,\"Y\":59}]",
             JsonSerializer.Serialize(detectObjectInScenesResults[1].Points));
     }
