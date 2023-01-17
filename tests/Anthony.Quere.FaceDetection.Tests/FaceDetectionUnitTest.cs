@@ -24,8 +24,7 @@ public class FaceDetectionUnitTest
         var detectObjectInScenesResults = new
             FaceDetection().DetectInScenes(imageScenesData);
 
-        // TODO : change tests
-        Assert.Equal("[{\"X\":1,\"Y\":2}]",JsonSerializer.Serialize(detectObjectInScenesResults[0].Points));
+        Assert.Equal("[{\"X\":744,\"Y\":165},{\"X\":139,\"Y\":195},{\"X\":165,\"Y\":0}]",JsonSerializer.Serialize(detectObjectInScenesResults[0].Points));
         Assert.Equal("[{\"X\":1,\"Y\":2}]",
             JsonSerializer.Serialize(detectObjectInScenesResults[1].Points));
     }
