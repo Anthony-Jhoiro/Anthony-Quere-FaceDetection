@@ -25,7 +25,7 @@ public class FaceDetectionUnitTest
             FaceDetection().DetectInScenes(imageScenesData);
 
         Assert.Equal("[{\"X\":744,\"Y\":165},{\"X\":139,\"Y\":195},{\"X\":165,\"Y\":410}]",JsonSerializer.Serialize(detectObjectInScenesResults[0].Points));
-        Assert.Equal("[{\"X\":1,\"Y\":2}]",
+        Assert.Equal("[{\"X\":499,\"Y\":59}]",
             JsonSerializer.Serialize(detectObjectInScenesResults[1].Points));
     }
     private static string GetExecutingPath()
