@@ -21,13 +21,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Scenes\Anthony-Quere-0.jpg">
+    <None Update="Scenes\Anthony-Quere-scene-0.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Scenes\Anthony-Quere-1.jpg">
+    <None Update="Scenes\Anthony-Quere-scene-1.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Scenes\Anthony-Quere-2.jpg">
+    <None Update="Scenes\Anthony-Quere-scene-2.jpg">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
