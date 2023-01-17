@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{67E3957F-C276-4E1D-BDDF-3CAC515228BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anthony.Quere.FaceDetection", "src\Anthony.Quere.FaceDetection\Anthony.Quere.FaceDetection.csproj", "{91DDDC79-1262-418B-AD19-814301072968}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D7D1C9F6-B093-4E38-8DFE-56666B781552}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anthony.Quere.FaceDetection.Tests", "tests\Anthony.Quere.FaceDetection.Tests\Anthony.Quere.FaceDetection.Tests.csproj", "{A7308AF8-B000-42CD-BBD6-4C157E181E74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anthony.Quere.FaceDetection.Console", "src\Anthony.Quere.FaceDetection.Console\Anthony.Quere.FaceDetection.Console.csproj", "{78E8ADEC-E14A-41C6-A47F-BF6188A3824C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anthony.Quere.FaceDetection.WebApi", "src\Anthony.Quere.FaceDetection.WebApi\Anthony.Quere.FaceDetection.WebApi.csproj", "{A6010CC7-C6A5-4C71-8FFE-1CA5B52A5160}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91DDDC79-1262-418B-AD19-814301072968}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91DDDC79-1262-418B-AD19-814301072968}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91DDDC79-1262-418B-AD19-814301072968}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91DDDC79-1262-418B-AD19-814301072968}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7308AF8-B000-42CD-BBD6-4C157E181E74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7308AF8-B000-42CD-BBD6-4C157E181E74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7308AF8-B000-42CD-BBD6-4C157E181E74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7308AF8-B000-42CD-BBD6-4C157E181E74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78E8ADEC-E14A-41C6-A47F-BF6188A3824C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78E8ADEC-E14A-41C6-A47F-BF6188A3824C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78E8ADEC-E14A-41C6-A47F-BF6188A3824C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78E8ADEC-E14A-41C6-A47F-BF6188A3824C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6010CC7-C6A5-4C71-8FFE-1CA5B52A5160}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6010CC7-C6A5-4C71-8FFE-1CA5B52A5160}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6010CC7-C6A5-4C71-8FFE-1CA5B52A5160}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6010CC7-C6A5-4C71-8FFE-1CA5B52A5160}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{91DDDC79-1262-418B-AD19-814301072968} = {67E3957F-C276-4E1D-BDDF-3CAC515228BD}
+		{A7308AF8-B000-42CD-BBD6-4C157E181E74} = {D7D1C9F6-B093-4E38-8DFE-56666B781552}
+		{78E8ADEC-E14A-41C6-A47F-BF6188A3824C} = {67E3957F-C276-4E1D-BDDF-3CAC515228BD}
+		{A6010CC7-C6A5-4C71-8FFE-1CA5B52A5160} = {67E3957F-C276-4E1D-BDDF-3CAC515228BD}
+	EndGlobalSection
+EndGlobal
